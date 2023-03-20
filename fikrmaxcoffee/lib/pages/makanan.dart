@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class Makanan extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -6,9 +7,31 @@ class Makanan extends StatelessWidget {
       appBar: AppBar(title: Text('Food', style: TextStyle(color: Colors.black)), actions: [], backgroundColor: Colors.white,
       ),
         body: SingleChildScrollView(
-      child: Column(
-        children: [],
-      ),
-    ));
+          child: Column(
+            children: [
+              CarouselSlider(
+                options: CarouselOptions(
+                  height: 400,
+                  viewportFraction: 1.0,
+                  enlargeCenterPage: false,
+                  // autoPlay: false,
+                ),
+                items: [1, 2, 3, 4, 5]
+                    .map((item) => Container(
+                            child: Column(
+                          children: [
+                            Container(
+                              width: 200,
+                              height: 400,
+                              decoration: BoxDecoration(
+                                  border: Border.all(color: Colors.white)),
+                            )
+                          ],
+                        )))
+                    .toList(),
+              )
+            ],
+          ),
+        ));
   }
 }

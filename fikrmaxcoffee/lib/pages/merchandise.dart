@@ -6,25 +6,25 @@ class Merchandise extends StatelessWidget {
       appBar: AppBar(title: Text('Merchandise', style: TextStyle(color: Colors.black)), actions: [], backgroundColor: Colors.white,
       ),
         body: SingleChildScrollView(
-      child: Column(
-        children: [
-          Container(
-              width: MediaQuery.of(context).size.width,
-              height: 450,
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.white))),
-          Container(
-              width: MediaQuery.of(context).size.width,
-              height: 450,
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.white))),
-          Container(
-              width: MediaQuery.of(context).size.width,
-              height: 450,
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.white))),
-        ],
-      ),
-     ));
+          child: Column(
+            children: [
+              Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 450,
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white))),
+              Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 450,
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white))),
+              Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 450,
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white))),
+            ],
+          ),
+        ));
   }
 }
