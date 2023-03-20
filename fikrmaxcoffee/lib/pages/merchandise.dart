@@ -3,28 +3,32 @@ import 'package:flutter/material.dart';
 class Merchandise extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Minuman', style: TextStyle(color: Colors.black)), actions: [], backgroundColor: Colors.white,
-      ),
+        appBar: AppBar(
+          title: Text('Merchandise', style: TextStyle(color: Colors.black)),
+          actions: [],
+          backgroundColor: Colors.white,
+          iconTheme: IconThemeData(color: Colors.black),
+        ),
         body: SingleChildScrollView(
-      child: Column(
-        children: [
-          Container(
-              width: MediaQuery.of(context).size.width,
-              height: 450,
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.white))),
-          Container(
-              width: MediaQuery.of(context).size.width,
-              height: 450,
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.white))),
-          Container(
-              width: MediaQuery.of(context).size.width,
-              height: 450,
-              decoration:
-                  BoxDecoration(border: Border.all(color: Colors.white))),
-        ],
-      ),
-     ));
+          child: Column(
+            children: [
+              Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 450,
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white))),
+              Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 450,
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white))),
+              Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 450,
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.white))),
+            ],
+          ),
+        ));
   }
 }
