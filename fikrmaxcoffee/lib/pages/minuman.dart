@@ -188,15 +188,8 @@ class Minuman extends StatelessWidget {
           //         ),
           //       ],
           //     ))
-          TextButton(
-          onPressed: () {  
-            Navigator.of(context).pushNamed('Makanan');
-          },
-          child: Text('Check the other category')),
-
-
-          ],)   
+        ],
       ),
-    );
+    ));
   }
 }

@@ -20,7 +20,7 @@ class Minuman extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   child: Text(
-                    'TEA DRINKS MAXX COFFEE TEMBAGAPURA',
+                    'COFFEE DRINKS MAXX COFFEE TEMBAGAPURA',
                     style: TextStyle(color: Colors.white, fontSize: 11),
                   ),
                 )
@@ -188,15 +188,8 @@ class Minuman extends StatelessWidget {
           //         ),
           //       ],
           //     ))
-          TextButton(
-          onPressed: () {  
-            Navigator.of(context).pushNamed('Makanan');
-          },
-          child: Text('Check the other category')),
-
-
-          ],)   
+        ],
       ),
-    );
+    ));
   }
 }

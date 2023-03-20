@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:newproject/pages/home.dart';
-
+// import 'package:newproject/pages/minuman.dart';
+import 'package:newproject/pages/merchandise.dart';
+import 'package:newproject/pages/makanan.dart';
+// yang inti
+import 'package:newproject/pages/yang_inti/about.dart';
+import 'package:newproject/pages/yang_inti/homepage.dart';
+import 'package:newproject/pages/yang_inti/kategori.dart';
+import 'package:newproject/pages/yang_inti/onboardingpage.dart';
+import 'package:newproject/pages/yang_inti/socials.dart';
+// pages_minuman
+import 'package:newproject/pages/pages_minuman/drinkamericano.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -25,7 +35,19 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
           scaffoldBackgroundColor: const Color(0xFF1C1B1B)),
-      home: Minuman(),
+      // home: Minuman(),
+      routes: {
+        '/' : (context) => Minuman(),
+        '/makanan' : (context) => Makanan(),
+            '/merchandise' : (context) => Merchandise(),
+               '/about' : (context) => About(),
+                  '/homepage' : (context) => Homepage(),
+                     '/kategori' : (context) => Kategori(),
+                     '/onboardingpage' : (context) => Onboardingpage(),
+                           '/socials' : (context) => Socials(),
+                              '/drinkamericano' : (context) => Americano(),
+
+      },
     );
   }
 }

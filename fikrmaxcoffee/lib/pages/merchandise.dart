@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Merchandise extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Minuman', style: TextStyle(color: Colors.black)), actions: [], backgroundColor: Colors.white,
+      appBar: AppBar(title: Text('Merchandise', style: TextStyle(color: Colors.black)), actions: [], backgroundColor: Colors.white,
       ),
         body: SingleChildScrollView(
       child: Column(
