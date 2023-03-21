@@ -200,7 +200,38 @@ class Minuman extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context).pushNamed('/merchandise');
                   },
-                  child: Text('Tes Ganti Halaman ke Merchandise'))
+                  child: Text('Tes Ganti Halaman ke Merchandise')),
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/homepage');
+                  },
+                  child: Text('homepage')),
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/about');
+                  },
+                  child: Text('about')),
+                                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/kategori');
+                  },
+                  child: Text('kategori')),
+              TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/socials');
+                  },
+                  child: Text('socials')),
+                          TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/about');
+                  },
+                  child: Text('about')),
+                                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/drinkamericano');
+                  },
+                  child: Text('americano')),
+                  
             ],
           ),
         ));
