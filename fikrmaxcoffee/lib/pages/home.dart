@@ -228,9 +228,11 @@ class Minuman extends StatelessWidget {
                   child: Text('about')),
                                 TextButton(
                   onPressed: () {
-                    Navigator.of(context).pushNamed('/drinkamericano');
+                    Navigator.of(context).pushNamed('/drinkgreentealatte');
                   },
                   child: Text('americano')),
+                  
+                  
                   
             ],
           ),

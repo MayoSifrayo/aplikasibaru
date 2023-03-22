@@ -25,7 +25,7 @@ class Americano extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('AMERICANO', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 20)),
+                  Text('GREEN TEA LATTE', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 20)),
                   Text('Hot/Iced', style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic, fontSize: 15),),
                   Text('MED 56   REG 56   LARG 60', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
                 ],

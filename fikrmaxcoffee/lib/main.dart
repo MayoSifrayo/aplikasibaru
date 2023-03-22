@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
           // or simply save your changes to "hot reload" in a Flutter IDE).
           // Notice that the counter didn't reset back to zero; the application
           // is not restarted.
+          fontFamily: 'Montserrat',
           primarySwatch: Colors.blue,
           scaffoldBackgroundColor: const Color(0xFF1C1B1B)),
       // home: Minuman(),
