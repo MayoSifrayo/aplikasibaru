@@ -1,6 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:newproject/models/minuman.dart';
 
 class Minuman extends StatelessWidget {
+  List<MinumanModel> minumanitems = [
+    MinumanModel(
+        judul: 'AMERICANO',
+        desc: 'European coffee that approaches the American style of coffee',
+        gambar: 'assets/Americano.jpg',
+        tipe:'hot/iced'
+    ),
+    MinumanModel(
+        judul: 'CHOCOLATE CHIP CREAM FRAPPE',
+        desc: 'Cream based frappe blended with milk, chocolate chips, and ice, topped with whipped cream and chocolate sauce.',
+        gambar: 'assets/ChocolatechipCreamFrappe.jpg',
+        tipe: 'hot/iced'
+        ),
+    MinumanModel(
+        judul: 'GREEN TEA LATTE',
+        desc: "A perfect combination between Maxx Coffee’s special green tea and fresh milk. Also available with ice.",
+        gambar: 'assets/GreenteaLatte.jpg',
+        tipe: 'hot/iced'
+        ),
+  ];
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
@@ -32,10 +53,15 @@ class Minuman extends StatelessWidget {
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
-                //height: 450,
-                child: Column(
-                  children: [
-                    Container(
+                child: ListView.builder(
+                  scrollDirection: Axis.vertical,
+                  shrinkWrap: true,
+                  itemCount: minumanitems.length,
+                // prototypeItem: ListTile( 
+                //title: Text(items.first),
+                // ),
+                itemBuilder: (context, index) {
+                  return                    Container(
                       width: MediaQuery.of(context).size.width,
                       // height: 80,
                       margin: EdgeInsets.only(bottom: 50, top: 30),
@@ -54,14 +80,14 @@ class Minuman extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Hot/Iced',
+                                  minumanitems[index].tipe,
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 10,
                                       fontStyle: FontStyle.italic),
                                 ),
                                 Text(
-                                  'Americano',
+                                   minumanitems[index].judul,
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 15,
@@ -70,7 +96,7 @@ class Minuman extends StatelessWidget {
                                 Container(
                                   margin: EdgeInsets.only(top: 7),
                                   child: Text(
-                                    'A European approach to an American style coffee, combining the perfect espresso with steaming hot water. Also available with ice.',
+                                     minumanitems[index].desc,
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 10),
                                   ),
@@ -80,117 +106,9 @@ class Minuman extends StatelessWidget {
                           )),
                         ],
                       ),
-                    ),
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      // height: 80,
-                      margin: EdgeInsets.only(bottom: 50),
-                      child: Row(
-                        children: [
-                          Container(
-                            child: Image.asset(
-                              'assets/ellipse34.png',
-                              height: 120,
-                            ),
-                            margin: EdgeInsets.only(right: 10.0, left: 10.0),
-                          ),
-                          Flexible(
-                              child: Container(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Hot/Iced',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 10,
-                                      fontStyle: FontStyle.italic),
-                                ),
-                                Text(
-                                  'COOKIES & CREAM FRAPPE',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(top: 7),
-                                  child: Text(
-                                    'One of Maxx Coffee’s signature. A blend of vanilla, milk and cookies, topped with whipped cream',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 10),
-                                  ),
-                                )
-                              ],
-                            ),
-                          )),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      width: MediaQuery.of(context).size.width,
-                      // height: 80,
-                      margin: EdgeInsets.only(bottom: 50),
-                      child: Row(
-                        children: [
-                          Container(
-                            child: Image.asset(
-                              'assets/ellipse34.png',
-                              height: 120,
-                            ),
-                            margin: EdgeInsets.only(right: 10.0, left: 10.0),
-                          ),
-                          Flexible(
-                              child: Container(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Hot/Iced',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 10,
-                                      fontStyle: FontStyle.italic),
-                                ),
-                                Text(
-                                  'Americano',
-                                  style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 15,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(top: 7),
-                                  child: Text(
-                                    'A European approach to an American style coffee, combining the perfect espresso with steaming hot water. Also available with ice.',
-                                    style: TextStyle(
-                                        color: Colors.white, fontSize: 10),
-                                  ),
-                                )
-                              ],
-                            ),
-                          )),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+                    );
+                },),
               ),
-              // Container(
-              //     width: MediaQuery.of(context).size.width,
-              //     height: 90,
-              //     child: Column(
-              //       crossAxisAlignment: CrossAxisAlignment.center,
-              //       children: [
-              //         Text(
-              //           'NEXT PAGE >',
-              //           style: TextStyle(
-              //               color: Colors.white,
-              //               fontSize: 12,
-              //               fontWeight: FontWeight.w500),
-              //         ),
-              //       ],
-              //     ))
               TextButton(
                   onPressed: () {
                     Navigator.of(context).pushNamed('/makanan');

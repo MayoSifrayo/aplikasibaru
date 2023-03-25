@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Minuman extends StatelessWidget {
+class Frappeblendedcoffee extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Drinks', style: TextStyle(color: Colors.black)), actions: [], backgroundColor: Colors.white,

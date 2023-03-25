@@ -38,15 +38,15 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: const Color(0xFF1C1B1B)),
       // home: Minuman(),
       routes: {
-        '/' : (context) => Minuman(),
+        '/' : (context) => Homepage(),
         '/makanan' : (context) => Makanan(),
             '/merchandise' : (context) => Merchandise(),
                '/about' : (context) => About(),
-                  '/homepage' : (context) => Homepage(),
                      '/kategori' : (context) => Kategori(),
                      '/onboardingpage' : (context) => Onboardingpage(),
                            '/socials' : (context) => Socials(),
                               '/drinkamericano' : (context) => Americano(),
+                              '/minuman' : (context) => Minuman()
 
       },
     );
