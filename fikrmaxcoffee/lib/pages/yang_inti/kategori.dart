@@ -21,7 +21,9 @@ class Kategori extends StatelessWidget {
           ),
           Container(
             child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              Column(
+             InkWell(onTap:() {
+              Navigator.of(context).pushNamed('/minuman');
+             } ,child:  Column(
                 children: [
                   Image.asset('assets/drinkskate.png', height: 430),
                   Text(
@@ -29,7 +31,7 @@ class Kategori extends StatelessWidget {
                     style: TextStyle(color: Colors.white),
                   ),
                 ],
-              ),
+              ),),
               Column(
                 children: [
                   Image.asset('assets/foodkate.png', height: 430),
