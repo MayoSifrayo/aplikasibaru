@@ -20,7 +20,7 @@ class Merchandise extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   child: Text(
-                    'TEA DRINKS MAXX COFFEE TEMBAGAPURA',
+                    'MAXX COFFEE TEMBAGAPURA MERCHANDISE',
                     style: TextStyle(color: Colors.white, fontSize: 11),
                   ),
                 )

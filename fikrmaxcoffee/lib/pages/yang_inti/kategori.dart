@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newproject/pages/makanan.dart';
 
 class Kategori extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -32,7 +33,9 @@ class Kategori extends StatelessWidget {
                   ),
                 ],
               ),),
-              Column(
+InkWell(onTap: () {
+  Navigator.of(context).pushNamed('/makanan');
+}, child:               Column(
                 children: [
                   Image.asset('assets/foodkate.png', height: 430),
                   Text(
@@ -40,8 +43,10 @@ class Kategori extends StatelessWidget {
                     style: TextStyle(color: Colors.white),
                   ),
                 ],
-              ),
-              Column(
+              ),),
+InkWell(onTap: () {
+  Navigator.of(context).pushNamed('/merchandise');
+}, child:               Column(
                 children: [
                   Image.asset('assets/merchkate.png', height: 430),
                   Text(
@@ -49,7 +54,7 @@ class Kategori extends StatelessWidget {
                     style: TextStyle(color: Colors.white),
                   ),
                 ],
-              ),
+              ),),
             ]),
           ),
         ],
