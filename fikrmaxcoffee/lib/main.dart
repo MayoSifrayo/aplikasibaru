@@ -7,6 +7,7 @@ import 'package:newproject/pages/makanan.dart';
 import 'package:newproject/pages/yang_inti/about.dart';
 import 'package:newproject/pages/yang_inti/homepage.dart';
 import 'package:newproject/pages/yang_inti/kategori.dart';
+import 'package:newproject/pages/yang_inti/kategoridrinks.dart';
 import 'package:newproject/pages/yang_inti/onboardingpage.dart';
 import 'package:newproject/pages/yang_inti/socials.dart';
 // pages_minuman
@@ -47,7 +48,8 @@ class MyApp extends StatelessWidget {
                      '/onboardingpage' : (context) => Onboardingpage(),
                            '/socials' : (context) => Socials(),
                               '/drinkamericano' : (context) => Americano(),
-                              '/minuman' : (context) => Minuman()
+                              '/minuman' : (context) => Minuman(),
+                              '/kategoridrinks' : (context) => Kategoridrinks()
 
       },
     );
